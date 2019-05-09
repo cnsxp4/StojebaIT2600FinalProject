@@ -11,7 +11,7 @@ The tutorial will utilize Kali Linux running on VMWare Workstation Pro.  They wi
 
 Links to tutorials:
 
- [1. Host (Target) Machine Setup ](../blob/master/HostSetup)
+ [1. Host (Target) Machine Setup ](HostSetup)
  
  [2. Attack Machine(s) Setup & Exploit ](../blob/master/AttackSetup)
  
