@@ -2,7 +2,8 @@
 This is a separate virtual machine with an IP Address of _192.168.166.202_
 
 1. To start, we will use 'nmap' to search the target machine to find an open port.  'nmap 192.168.166.201'
-![Attack1](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack1)
+![Attack1](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack1.png)
+
 Nmap returns that port 80/tcp is open. This makes sense beacuse the target machin is running and HTTP server
 
 2. The next step is to get ready to run the Metasploit console.  The first step is to ensure that postgresql is running
@@ -18,7 +19,7 @@ Nmap returns that port 80/tcp is open. This makes sense beacuse the target machi
   
   '# msfconsole'
   
-  ![Attack2](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack2)
+  ![Attack2](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack2.png)
   
  3. Now we can prepare Metaspliot to carry out our SYN Flood Attack.
  
@@ -39,12 +40,12 @@ Nmap returns that port 80/tcp is open. This makes sense beacuse the target machi
   
   3. Durring the attack, Wireshark can be used to view how many packets have been sent to the target.
   
-  ![Attack3](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack3)
+  ![Attack3](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack3.png)
   
   The highlighted portion shows that we have sent 119,591 packets to the target machine at this point in time
   
   Similarly, if we want to see how this is effecting the host machine, we can attempt to connect to the host site using the host's IP address.  The site should be slow to load or inaccessible entirely.  On the host machine, we can load the system info application and look at the network load
   
-  ![Attack4](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack4)
+  ![Attack4](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack4.png)
  
   
