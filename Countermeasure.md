@@ -16,7 +16,7 @@ Mod_evasive is a utility that is available for Apache2 that allows the host to d
   
   Edit the config file however you choose, here is a description of what each varriable means.
   
- [Counter1](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Counter1.png)
+ ![Counter1](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Counter1.png)
  
 2.  Restart the Apache2 Server so that the changes can be implemented 
    `service apache2 start`
@@ -24,7 +24,7 @@ Mod_evasive is a utility that is available for Apache2 that allows the host to d
 3. Carry out the DoS attack once again with mod_evasive enabled.  You should notice that the webpage does not slow as heavily as it did in the prior attack.  To ensure that the attack machine's IP address is being blocked, search the host's IP address in a web browser
 You should see and error message similar to this:
 
- [Counter2](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Counter2.png)
+ ![Counter2](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Counter2.png)
  
  Something to remeber is that the Host's network load will still be high and performance will suffer because mod_evasive needs to compare each packet's IP Address to that of the incoming packets.  
  
