@@ -1,3 +1,8 @@
+# DoS attacks and Countermeasures for Apache2
+
+Cord Stojeba
+
+The purpose of this tutorial will be to utilize Aphache2 to create a simple web server that will be targeted by a Metasploit SYN Flood syle Denial of Service (DoS).  We will then discuss a countermeasure to metigate the harm of the attack.
 
 This tutorial is intended for use by penetration testers or novice website managers.  It requires a basic understanding of Linux commands.
 
