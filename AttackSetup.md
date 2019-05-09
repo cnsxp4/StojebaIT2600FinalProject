@@ -1,23 +1,26 @@
 # Attack Machine Setup
 This is a separate virtual machine with an IP Address of _192.168.166.202_
 
-1. To start, we will use 'nmap' to search the target machine to find an open port.  'nmap 192.168.166.201'
+1. To start, we will use 'nmap' to search the target machine to find an open port.  
+`nmap 192.168.166.201`
+
 ![Attack1](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack1.png)
 
 Nmap returns that port 80/tcp is open. This makes sense beacuse the target machin is running and HTTP server
 
 2. The next step is to get ready to run the Metasploit console.  The first step is to ensure that postgresql is running
+
   `# /etc/init.d/postgresqlstatus`
   
   `#/etc/init.d/postgresqlstart`
   
   This starts the postgresql services.  Next we have to initialize the Metasploit database.
   
-  '# msfdbinit'
+  `# msfdbinit`
   
   Once that is conplete, we can execute the Metasploit console
   
-  '# msfconsole'
+  `# msfconsole`
   
   ![Attack2](https://github.com/cnsxp4/StojebaIT2600FinalProject/blob/master/Attack2.png)
   
@@ -28,15 +31,15 @@ Nmap returns that port 80/tcp is open. This makes sense beacuse the target machi
   
   Next set the target host's IP address.
   
-  'set RHOSTS 192.168.166.201'
+  `set RHOSTS 192.168.166.201`
   
   The default target port should be 80, however it can be set using the following.
   
-  'set RPORT 80'
+  `set RPORT 80`
   
   Once all the information is input, the attack can be executed with this command.
   
-  'exploit'
+  `exploit`
   
   3. Durring the attack, Wireshark can be used to view how many packets have been sent to the target.
   
