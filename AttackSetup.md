@@ -7,9 +7,9 @@ This is a separate virtual machine with an IP Address of _192.168.166.202_
 Nmap returns that port 80/tcp is open. This makes sense beacuse the target machin is running and HTTP server
 
 2. The next step is to get ready to run the Metasploit console.  The first step is to ensure that postgresql is running
-  '# /etc/init.d/postgresqlstatus'
+  `# /etc/init.d/postgresqlstatus`
   
-  '#/etc/init.d/postgresqlstart'
+  `#/etc/init.d/postgresqlstart`
   
   This starts the postgresql services.  Next we have to initialize the Metasploit database.
   
